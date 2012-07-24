@@ -1,3 +1,11 @@
+/**
+ * @file CatPictureApp.cpp
+ * A simple app to display a cat picture using Cinder.
+ *
+ * @author Bo Brinkman
+ * @date 2012-07-24
+ */
+
 #include "cinder/app/AppBasic.h"
 #include "cinder/gl/gl.h"
 
@@ -16,13 +24,17 @@ class CatPictureApp : public AppBasic {
 	float brightness;
 };
 
+/**
+	This function handles mouse events.
+
+	@param[in]	event	The mouse event to be handled.
+ */
+void CatPictureApp::mouseDown( MouseEvent event ){
+}
+
 void CatPictureApp::setup()
 {
 	brightness = 1.0f;
-}
-
-void CatPictureApp::mouseDown( MouseEvent event )
-{
 }
 
 void CatPictureApp::update()
@@ -35,7 +47,7 @@ void CatPictureApp::update()
 
 void CatPictureApp::draw()
 {
-	// clear out the window with black
+	// clear out the window with some color of gray, based on brightness
 	gl::clear( Color( brightness, brightness, brightness ) ); 
 }
 
