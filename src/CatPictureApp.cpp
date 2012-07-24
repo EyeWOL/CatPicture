@@ -16,21 +16,12 @@ using namespace std;
 class CatPictureApp : public AppBasic {
   public:
 	void setup();
-	void mouseDown( MouseEvent event );	
 	void update();
 	void draw();
 
-  private:
+	/// Brightness of the screen. Must be between 0.0f (black) and 1.0f (white), inclusive.
 	float brightness;
 };
-
-/**
-	This function handles mouse events.
-
-	@param[in]	event	The mouse event to be handled.
- */
-void CatPictureApp::mouseDown( MouseEvent event ){
-}
 
 void CatPictureApp::setup()
 {
