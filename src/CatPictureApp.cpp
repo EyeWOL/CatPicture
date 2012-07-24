@@ -25,26 +25,26 @@ class CatPictureApp : public AppBasic {
 	void draw();
 
 	/// Brightness of the screen. Must be between 0.0f (black) and 1.0f (white), inclusive.
-	float brightness;
+	float brightness_;
 };
 
 void CatPictureApp::setup()
 {
-	brightness = 1.0f;
+	brightness_ = 1.0f;
 }
 
 void CatPictureApp::update()
 {
-	brightness = brightness - 0.01f;
-	if(brightness < 0.0f){
-		brightness = 1.0f;
+	brightness_ = brightness_ - 0.01f;
+	if(brightness_ < 0.0f){
+		brightness_ = 1.0f;
 	}
 }
 
 void CatPictureApp::draw()
 {
 	// clear out the window with some color of gray, based on brightness
-	gl::clear( Color( brightness, brightness, brightness ) ); 
+	gl::clear( Color( brightness_, brightness_, brightness_ ) ); 
 }
 
 CINDER_APP_BASIC( CatPictureApp, RendererGl )
