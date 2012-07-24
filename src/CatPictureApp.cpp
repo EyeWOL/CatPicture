@@ -13,38 +13,45 @@
 
 #include "cinder/app/AppBasic.h"
 #include "cinder/gl/gl.h"
+#include "cinder/gl/Texture.h"
 
 using namespace ci;
 using namespace ci::app;
 using namespace std;
+
+const int TEXTURE_WIDTH=1024;
+const int TEXTURE_HEIGHT=1024;
 
 class CatPictureApp : public AppBasic {
   public:
 	void setup();
 	void update();
 	void draw();
+	void prepareSettings(Settings* settings);
 
-	/// Brightness of the screen. Must be between 0.0f (black) and 1.0f (white), inclusive.
-	float brightness_;
+	Surface mySurface;
+	gl::Texture myTexture;
 };
+
+void CatPictureApp::prepareSettings(Settings* settings){
+	(*settings).setWindowSize(640,480);
+	(*settings).setResizable(false);
+}
 
 void CatPictureApp::setup()
 {
-	brightness_ = 1.0f;
+	myTexture = gl::Texture(TEXTURE_WIDTH,TEXTURE_HEIGHT);
 }
 
 void CatPictureApp::update()
 {
-	brightness_ = brightness_ - 0.01f;
-	if(brightness_ < 0.0f){
-		brightness_ = 1.0f;
-	}
+
 }
 
 void CatPictureApp::draw()
 {
-	// clear out the window with some color of gray, based on brightness
-	gl::clear( Color( brightness_, brightness_, brightness_ ) ); 
+	//Draw our texture to the screen, using graphics library
+	gl::draw(myTexture);
 }
 
 CINDER_APP_BASIC( CatPictureApp, RendererGl )
