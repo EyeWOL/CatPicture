@@ -29,8 +29,8 @@ class CatPictureApp : public AppBasic {
 	void draw();
 	void prepareSettings(Settings* settings);
 
-	Surface mySurface_;
-	gl::Texture myTexture_;
+	Surface* mySurface_;
+	gl::Texture* myTexture_;
 
 	///Number of times update has been called
 	int frameNumber_; 
@@ -43,7 +43,8 @@ void CatPictureApp::prepareSettings(Settings* settings){
 
 void CatPictureApp::setup()
 {
-	mySurface_ = Surface(TEXTURE_WIDTH,TEXTURE_HEIGHT,false);
+	mySurface_ = new Surface(TEXTURE_WIDTH,TEXTURE_HEIGHT,false);
+	myTexture_ = new gl::Texture(*mySurface_);
 	frameNumber_ = 0;
 }
 
@@ -51,7 +52,7 @@ void CatPictureApp::update()
 {
 	frameNumber_++;
 
-	uint8_t* dataArray = mySurface_.getData();
+	uint8_t* dataArray = (*mySurface_).getData();
 
 	for(int i=0; i< TEXTURE_WIDTH*TEXTURE_HEIGHT*3; i++){
 		int row = i/(3*TEXTURE_WIDTH);
@@ -70,13 +71,13 @@ void CatPictureApp::update()
 
 	}
 
-	myTexture_ = gl::Texture(mySurface_);
+	(*myTexture_).update(*mySurface_,(*mySurface_).getBounds());
 }
 
 void CatPictureApp::draw()
 {
 	//Draw our texture to the screen, using graphics library
-	gl::draw(myTexture_);
+	gl::draw(*myTexture_);
 }
 
 CINDER_APP_BASIC( CatPictureApp, RendererGl )
