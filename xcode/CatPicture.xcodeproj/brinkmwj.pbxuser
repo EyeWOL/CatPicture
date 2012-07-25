@@ -43,11 +43,10 @@
 			PBXWorkspaceStateSaveDate = 364852609;
 		};
 		perUserProjectItems = {
-			F034482815BF35B500B82552 /* PlistBookmark */ = F034482815BF35B500B82552 /* PlistBookmark */;
-			F038B2B615BEEAB70054BB8C = F038B2B615BEEAB70054BB8C /* PBXTextBookmark */;
-			F038B2B715BEEAB70054BB8C = F038B2B715BEEAB70054BB8C /* PBXTextBookmark */;
-			F038B2B815BEEAB70054BB8C = F038B2B815BEEAB70054BB8C /* PlistBookmark */;
-			F038B2C415BEEAEA0054BB8C = F038B2C415BEEAEA0054BB8C /* PlistBookmark */;
+			F034483615BF382A00B82552 /* PlistBookmark */ = F034483615BF382A00B82552 /* PlistBookmark */;
+			F038B2B615BEEAB70054BB8C /* PBXTextBookmark */ = F038B2B615BEEAB70054BB8C /* PBXTextBookmark */;
+			F038B2B715BEEAB70054BB8C /* PBXTextBookmark */ = F038B2B715BEEAB70054BB8C /* PBXTextBookmark */;
+			F038B2C415BEEAEA0054BB8C /* PlistBookmark */ = F038B2C415BEEAEA0054BB8C /* PlistBookmark */;
 		};
 		sourceControlManager = F038B29D15BEE5E50054BB8C /* Source Control */;
 		userBuildSettings = {
@@ -66,7 +65,7 @@
 			F038B28615BEE5CB0054BB8C /* CatPicture */,
 		);
 	};
-	F034482815BF35B500B82552 /* PlistBookmark */ = {
+	F034483615BF382A00B82552 /* PlistBookmark */ = {
 		isa = PlistBookmark;
 		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
 		fallbackIsa = PBXBookmark;
@@ -140,17 +139,6 @@
 		rType = 0;
 		vrLen = 323;
 		vrLoc = 0;
-	};
-	F038B2B815BEEAB70054BB8C /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = "/Users/brinkmwj/Work/Teaching and learning/Courses/2012-2013_Fall/274/Gits/CatPicture/xcode/Info.plist";
-		rLen = 0;
-		rLoc = 9223372036854775808;
 	};
 	F038B2C415BEEAEA0054BB8C /* PlistBookmark */ = {
 		isa = PlistBookmark;
