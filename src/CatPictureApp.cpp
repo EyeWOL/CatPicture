@@ -43,7 +43,7 @@ void CatPictureApp::prepareSettings(Settings* settings){
 
 void CatPictureApp::setup()
 {
-	mySurface_ = new Surface(getWindowWidth(),getWindowHeight(),false);
+	mySurface_ = new Surface(TEXTURE_WIDTH,TEXTURE_HEIGHT,false);
 	myTexture_ = new gl::Texture(*mySurface_);
 	frameNumber_ = 0;
 }

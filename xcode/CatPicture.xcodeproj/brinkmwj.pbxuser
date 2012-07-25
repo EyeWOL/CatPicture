@@ -2,10 +2,10 @@
 {
 	00BAE6590E7ED9C10018A608 /* CatPictureApp.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {439, 637}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 208}";
-			sepNavWindowFrame = "{{-1261, -80}, {1089, 975}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1030, 1053}}";
+			sepNavSelRange = "{1077, 0}";
+			sepNavVisRange = "{193, 1376}";
+			sepNavWindowFrame = "{{4, 0}, {1089, 878}}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
@@ -22,7 +22,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					341,
+					356,
 					20,
 					48,
 					43,
@@ -39,14 +39,15 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 364852609;
-			PBXWorkspaceStateSaveDate = 364852609;
+			PBXPerProjectTemplateStateSaveDate = 364914100;
+			PBXWorkspaceStateSaveDate = 364914100;
 		};
 		perUserProjectItems = {
 			F034483615BF382A00B82552 /* PlistBookmark */ = F034483615BF382A00B82552 /* PlistBookmark */;
-			F038B2B615BEEAB70054BB8C /* PBXTextBookmark */ = F038B2B615BEEAB70054BB8C /* PBXTextBookmark */;
 			F038B2B715BEEAB70054BB8C /* PBXTextBookmark */ = F038B2B715BEEAB70054BB8C /* PBXTextBookmark */;
-			F038B2C415BEEAEA0054BB8C /* PlistBookmark */ = F038B2C415BEEAEA0054BB8C /* PlistBookmark */;
+			F078341F15C025B800398816 /* PBXBookmark */ = F078341F15C025B800398816 /* PBXBookmark */;
+			F078342615C0260500398816 /* PlistBookmark */ = F078342615C0260500398816 /* PlistBookmark */;
+			F078342B15C0260500398816 /* PBXTextBookmark */ = F078342B15C0260500398816 /* PBXTextBookmark */;
 		};
 		sourceControlManager = F038B29D15BEE5E50054BB8C /* Source Control */;
 		userBuildSettings = {
@@ -74,7 +75,7 @@
 		);
 		name = "/Users/brinkmwj/Work/Teaching and learning/Courses/2012-2013_Fall/274/Gits/CatPicture/xcode/Info.plist";
 		rLen = 0;
-		rLoc = 9223372036854775807;
+		rLoc = 9223372036854775808;
 	};
 	F038B28615BEE5CB0054BB8C /* CatPicture */ = {
 		isa = PBXExecutable;
@@ -120,16 +121,6 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
-	F038B2B615BEEAB70054BB8C /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 32CA4F630368D1EE00C91783 /* CatPicture_Prefix.pch */;
-		name = "CatPicture_Prefix.pch: 8";
-		rLen = 0;
-		rLoc = 143;
-		rType = 0;
-		vrLen = 143;
-		vrLoc = 0;
-	};
 	F038B2B715BEEAB70054BB8C /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 00BAE6590E7ED9C10018A608 /* CatPictureApp.cpp */;
@@ -140,15 +131,29 @@
 		vrLen = 323;
 		vrLoc = 0;
 	};
-	F038B2C415BEEAEA0054BB8C /* PlistBookmark */ = {
+	F078341F15C025B800398816 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* CatPictureApp.cpp */;
+	};
+	F078342615C0260500398816 /* PlistBookmark */ = {
 		isa = PlistBookmark;
 		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
 		fallbackIsa = PBXBookmark;
 		isK = 0;
 		kPath = (
 		);
-		name = "/Users/brinkmwj/Work/Teaching and learning/Courses/2012-2013_Fall/274/Gits/CatPicture/xcode/Info.plist";
+		name = /Users/brinkmwj/Desktop/CatPicture/xcode/Info.plist;
 		rLen = 0;
-		rLoc = 9223372036854775808;
+		rLoc = 9223372036854775807;
+	};
+	F078342B15C0260500398816 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00BAE6590E7ED9C10018A608 /* CatPictureApp.cpp */;
+		name = "CatPictureApp.cpp: 46";
+		rLen = 0;
+		rLoc = 1077;
+		rType = 0;
+		vrLen = 1376;
+		vrLoc = 193;
 	};
 }
