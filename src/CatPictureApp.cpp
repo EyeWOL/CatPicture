@@ -54,9 +54,9 @@ void CatPictureApp::update()
 
 	uint8_t* dataArray = (*mySurface_).getData();
 
-	for(int i=0; i< TEXTURE_WIDTH*TEXTURE_HEIGHT*3; i++){
-		int row = i/(3*TEXTURE_WIDTH);
-		int col = (i/3) % TEXTURE_WIDTH;
+	for(int i=0; i< (*mySurface_).getWidth()*(*mySurface_).getHeight() *3; i++){
+		int row = i/(3*(*mySurface_).getWidth());
+		int col = (i/3) % (*mySurface_).getWidth();
 
 		int whichComponent = i % 3;
 
